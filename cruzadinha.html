@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+        *{
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lato', Helvetica, sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            width: 100%;
+            /* flex-direction: column; */
+            padding: 2vh 2vw;
+
+            background-image: linear-gradient(120deg, #212121, #262626);
+            color: #e5e5e5;
+        }
+        input{
+            font-size: 20px; 
+            text-align: center;
+             width: 32px;
+              height: 32px;
+              border: 1px solid #222;
+              outline: 0;
+              padding: 4px;
+              margin: 6px 0; 
+            background-color: #e5e5e5;
+            margin-right: 1px;
+        }
+        input.erro{
+            background-color: #ffb1b1;
+            color: #9b0f2d;
+            border: 2px solid #9b0f2d;
+        }
+        input.acerto{
+            background-color: #c1ffc1;
+            color: #00a537;
+            border: 2px solid #00a537;
+        }
+        .btn{
+            height: 30px;
+            padding: 0 20px;
+            background-image: linear-gradient(to bottom, #1b49e2, #3f65e4) ;
+            color: #eee;
+            border-radius: 3px;
+            box-shadow: 1px 1px 4px #232323aa;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: 18px;
+            font-weight: 600;
+
+            margin-left: 12px;
+        }
+        div{
+            display: flex;
+            align-items: center;
+        }
+        #dicas{
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.6;
+        }
+        h1{
+            text-transform: uppercase;
+            letter-spacing: .5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Palavras</h1>
+        <br>
+        <div id="dicas">
+            1 - Ela recebe este nome porque, de fato, é onde todas as operações do computador são processadas <br>
+            2 - A unidade lógica e aritmética, em inglês Arithmetic Logic Unit, é um circuito digital que realiza operações de adição e booleana AND. <br>
+            3 - é a memória dentro da própria CPU que armazena n bits. Os registradores estão no topo da hierarquia de memória, sendo assim, é um tipo de memória mais rápida e financeiramente mais custosa. <br>
+            4 - é responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e para o funcionamento do próprio sistema operacional <br>
+            5 - é um tipo de memória que permite apenas a leitura, ou seja, as suas informações são gravadas pelo fabricante uma única vez e após isso não podem ser alteradas ou apagadas, somente acessadas. <br> 
+            6 - é um tipo de chip de memória de computador que mantém seus dados quando a energia é desligada. Em outras palavras, é não volátil. <br>
+            7 - é um tipo de dispositivo de armazenamento não volátil, ou seja, mesmo se não tiver energia, manterá as informações que salvas nela. <br>
+            8 - também conhecida como memória auxiliar ou armazenamento de massa, tem como função armazenar grandes quantidades de informações. <br>
+            9 - permite que certos dispositivos de hardware num computador acessem a memória do sistema para leitura e escrita independentemente da CPU <br>
+            10 - uma linha de controle na eletrônica digital usada para selecionar um dos circuitos integrados dentre vários conectados ao mesmo barramento de computador, geralmente utilizando a lógica de três estados. <br>
+            11 -  é uma arquitetura de barramento de computador usada para transferir dados entre dispositivos identificados pelo endereço de hardware da memória física (o endereço físico), que é armazenado na forma de números binários para permitir que o barramento de dados acesse o armazenamento de memória. <br>
+            12 -  é um sistema dentro de um computador ou dispositivo, consistindo em um conector ou conjunto de fios, que fornece transporte para os dados. <br>
+            13 - é uma das séries de processadores para desktops e notebooks da Intel. O primeiro modelo foi lançado em setembro de 2009. Ele possui quatro núcleos, cache L3 de 8MB e frequência de 2,66GHz. <br>
+            14 - faz parte das séries de processadores da Intel, tanto para desktop quanto para notebooks. Seu lançamento foi em 2008, buscando alto desempenho com foco em entusiasta e empresas. A primeira geração possui modelos  que possui 4 núcleos, cache L3 e frequência de 2,80GHz. <br>
+            15 - Processador multinúcleo é o que tem dois núcleos de processamento que podem ser dividido em diferentes tarefas <br>
+            16 - Processador multinúcleo é o que tem quatro núcleos de processamento que podem ser dividido em diferentes tarefas <br>
+        </div>
+    </section>
+
+    <br><br>
+    <script src="./index.js"></script>
+</body>
+</html>
