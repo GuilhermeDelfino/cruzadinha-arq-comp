@@ -5,11 +5,11 @@ function verificarPalavra(divNode) {
     let palavra = divNode.getAttribute('data-help-word');
     let inputs = divNode.querySelectorAll('input');
     let erro = false;
-    for(let i = 0; i < palavra.length; i++){
-        if(palavra[i].toUpperCase() == inputs[i].value.toUpperCase()){
+    for (let i = 0; i < palavra.length; i++) {
+        if (palavra[i].toUpperCase() == inputs[i].value.toUpperCase()) {
             inputs[i].classList.add('acerto');
             inputs[i].classList.remove('erro');
-        }else{
+        } else {
             inputs[i].classList.add('erro');
             inputs[i].classList.remove('acerto');
             erro = true;
@@ -31,12 +31,12 @@ function verificarPalavra(divNode) {
         let palavraDiv = document.createElement('div');
         palavraDiv.setAttribute('data-help-word', palavra);
         for (let i = 0; i < palavra.length; i++) {
-            palavraDiv.innerHTML += (`<input data-help='${palavra[i]}' autofocus maxlength='1'/>`)
+            palavraDiv.innerHTML += (`<input data-help='${palavra[i]}' ${palavra[i] == ' ' ? 'disabled' : ''} autofocus maxlength='1'/>`)
             document.body.appendChild(palavraDiv);
         }
         palavraDiv.innerHTML += `<button class='btn' onclick='verificarPalavra(this.parentNode)'>Verificar</button>`;
         document.body.innerHTML += '<br />';
     }
 
-    palavras.forEach(palavra =>gerar_cruzadinha(palavra))
+    palavras.forEach(palavra => gerar_cruzadinha(palavra));
 })()
